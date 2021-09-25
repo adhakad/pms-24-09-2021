@@ -5,7 +5,100 @@
   font-family: "Open Sans", sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
-/*---------------------overlay section--------------------*/
+
+/********************newVideoGrid********************/
+  #newVideoGrid {
+    width: 100%;
+  }
+  #newVideoGrid video {
+    width: 25%;
+    object-fit: cover;
+    border-radius: 4px;
+    transform: scaleX(-1);
+    box-sizing: border-box;
+  }
+  /********************joinVideoGrid********************/
+  #joinVideoGrid { 
+    max-height: 65vh; 
+    width: 100%;
+  }
+  #joinVideoGrid video {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    transform: scaleX(-1);
+    box-sizing: border-box;
+  }
+  /********************hostVideoGrid********************/
+  #hostVideoGrid {
+    width: 100%;height: 50vh;z-index: 3;position: fixed;
+  }
+  #hostVideoGrid video {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    transform: scaleX(-1);
+    box-sizing: border-box;
+  }
+  
+  /********************conNewVideoGrid********************/
+  #conNewVideoGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;height: 35vh;z-index: 1;
+  }
+  #conNewVideoGrid video {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    border-radius: 4px;
+    transform: scaleX(-1);
+    box-sizing: border-box;
+  }
+  .conNewVideo_item {
+    position: relative;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 50%;z-index: 1;
+  }
+  .conNewVideo_name {
+    z-index: 2;
+    bottom: 1vh;
+    color: white;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.486);
+  }
+  #countdown{
+    font-size: 25px;
+    position: relative;
+   
+  }
+  #count{
+    font-size: 25px;
+    position: relative;
+    color: #fff;
+  }
+  .nopadding {
+    padding: 0 !important; 
+  }
+  
+  .nopaddingss {
+    padding: 0 !important; 
+  }
+  .nopaddings {
+    padding: 0 !important; 
+  }
+  .mobile-margin{
+    height: 51vh;
+  }
+
+
+
+  /*---------------------overlay section--------------------*/
 .overlay{
   background: rgba(0, 0, 0, 0.6);
   width:100%;
@@ -112,143 +205,32 @@
   }
 
 
-@media (max-width: 575.98px) {
+  @media(min-width:480px)and (max-width:575px){
+ /********************newVideoGrid********************/
+ .bnav{
+   display: none;
+ }
 
-
-  #newVideoGrid {
-    width: 100%;
-  }
-  #newVideoGrid video {
-    width: 25%;
-    object-fit: cover;
-    border-radius: 4px;
-    transform: scaleX(-1);
-    box-sizing: border-box;
-  }
-  /********************joinVideoGrid********************/
-  #joinVideoGrid { 
-    max-height: 65vh; 
-    width: 100%;
-  }
-  #joinVideoGrid video {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-    transform: scaleX(-1);
-    box-sizing: border-box;
-  }
-  /********************hostVideoGrid********************/
-  #hostVideoGrid {
-    width: 100%;height: 50vh;z-index: 3;position: fixed;
-  }
-  #hostVideoGrid video {
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-    transform: scaleX(-1);
-    box-sizing: border-box;
-  }
-  
-  /********************conNewVideoGrid********************/
-  #conNewVideoGrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;height: 22vh;z-index: 1;
-  }
-  #conNewVideoGrid video {
-    width: 100%;
-    height: 22vh;
-    object-fit: cover;
-    border-radius: 4px;
-    transform: scaleX(-1);
-    box-sizing: border-box;
-  }
-  .conNewVideo_item {
-    position: relative;
-    padding-left: 1%;
-    padding-right: 1%;
-    width: 50%;z-index: 1;
-  }
-  .conNewVideo_name {
-    z-index: 2;
-    bottom: 1vh;
-    color: white;
-    font-size: 12px;
-    padding: 2px 4px;
-    border-radius: 4px;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.486);
-  }
-  #countdown{
-    font-size: 25px;
-    position: relative;
-   
-  }
-  #count{
-    font-size: 25px;
-    position: relative;
-    color: #fff;
-  }
-  .nopadding {
-    padding: 0 !important; 
-  }
-  
-  .nopaddingss {
-    padding: 0 !important; 
-  }
-  .nopaddings {
-    padding: 0 !important; 
-  }
-  .mobile-margin{
-    height: 51vh;
-  }
-}
-
-
-
-
-
-
-
-
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .bnav{
-    display: none;
-  }
-/********************newVideoGrid********************/
-#newVideoGrid {
+ #newVideoGrid {
   display: none;
 }
 #newVideoGrid video {
- display: none;
+  display: none;
 }
 /********************joinVideoGrid********************/
-#joinVideoGrid {  
+#joinVideoGrid { 
   width: 100%;
-  height: 100vh;position: fixed;
+  height: 100vh; 
+  position: fixed;
 }
 #joinVideoGrid video {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  border-radius: 0;
+  transform: scaleX(-1);
+  border: none;
 }
 
-.nopadding {
-  padding: 0 !important; 
-}
-
-.nopaddingss {
-  padding: 0 !important; 
-}
-.nopaddings {
-  padding: 0 !important; 
-}
-.mobile-margin{
-  height: 51vh;
-}
 }
 
 
